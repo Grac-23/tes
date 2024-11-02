@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .bg {
+            height: 100vh;
+            background-size: cover;
+            background-color: antiquewhite;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bgContainer" class="bg d-flex flex-column justify-content-center text-center">
+        <div class="container  mt-5  " >
+            <h1 id="head">Flowers</h1>
+            <p id="para" class="pt-3">Flowers are nature’s vibrant expressions of beauty, playing a crucial role in ecosystems and human
+                culture
+                alike. With their wide array of colors, shapes, and fragrances, flowers are not only aesthetically pleasing
+                but also serve important functions in the environment.
+            </p>
+            <div class="text-center">
+                <img src="" id="pic" class="w-25  pt-4" />
+            </div>
+    
+            <div class="text-center p-5">
+                <button class="m-2 btn btn-outline-success" onclick="rose()" id="rb">ROSE</button>
+                <button class="m-2 btn btn-outline-success" onclick="jasmin()" id="jb">JASMIN</button>
+                <button class="m-2 btn btn-outline-success" onclick="hibiscus()" id="hb">HIBISCUS</button>
+                <button class="m-2 btn btn-outline-success" onclick="lotus()" id="lb">LOTUS</button>
+            </div>
+    
+    
+        </div>
+    </div>
+   
+
+
+
+
+    <script>
+        let headE1 = document.getElementById("head");
+        let paraE1 = document.getElementById("para");
+        let picE1 = document.getElementById("pic");
+        let bgContainerE1 = document.getElementById("bgContainer");
+        let rbE1 = document.getElementById("rb");
+        let jbE1 = document.getElementById("jb");
+        let hbE1 = document.getElementById("hb");
+        let lbE1 = document.getElementById("lb");
+
+
+        function rose() {
+            headE1.textContent = "Rose"
+            rbE1.style.color = "white"
+            lbE1.style.color = "white"
+            hbE1.style.color = "white"
+            jbE1.style.color = "white"
+            rbE1.style.backgroundColor = "green"
+            hbE1.style.backgroundColor = "grey"
+            jbE1.style.backgroundColor = "grey"
+            lbE1.style.backgroundColor = "grey"
+            paraE1.textContent = "Roses are one of the most beloved flowers in the world, celebrated for their exquisite beauty and rich symbolism. With a variety of colors, each rose conveys a different meaning—red for love and passion, white for purity and innocence, and yellow for friendship and joy."
+            picE1.src = "https://img.freepik.com/free-photo/closeup-shot-red-rose-with-dew-top-black_181624-28079.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid"
+            bgContainerE1.style.backgroundImage = "url('https://img.freepik.com/free-vector/freedom-rose-red-flower-frame-background-with-white-space_41066-2563.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid')"
+        }
+
+        function jasmin() {
+            headE1.textContent = "Jasmin"
+            rbE1.style.color = "white"
+            lbE1.style.color = "white"
+            hbE1.style.color = "white"
+            jbE1.style.color = "white"
+            rbE1.style.backgroundColor = "grey"
+            hbE1.style.backgroundColor = "grey"
+            jbE1.style.backgroundColor = "green"
+            lbE1.style.backgroundColor = "grey"
+            picE1.src = "https://img.freepik.com/free-photo/closeup-shot-lotus-flower_181624-31124.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid"
+            paraE1.textContent = "Jasmine is a delicate and fragrant flower known for its sweet scent and cultural significance in various regions of the world. Its small, star-shaped blossoms bloom in white or yellow, attracting both admirers and pollinators alike."
+            bgContainerE1.style.backgroundImage  = "url('https://img.freepik.com/free-photo/popcorn-background_23-2147775731.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid')"
+        }
+        function hibiscus() {
+            headE1.textContent = "Hibiscus"
+            rbE1.style.color = "white"
+            lbE1.style.color = "white"
+            hbE1.style.color = "white"
+            jbE1.style.color = "white"
+            rbE1.style.backgroundColor = "grey"
+            hbE1.style.backgroundColor = "green"
+            jbE1.style.backgroundColor = "grey"
+            lbE1.style.backgroundColor = "grey"
+            paraE1.textContent = "Hibiscus is a striking flower known for its large, colorful blooms and tropical allure. With petals that can range from vibrant reds and pinks to yellows and whites, hibiscus plants are often used to beautify gardens and landscapes."
+            picE1.src ="https://img.freepik.com/free-vector/hand-drawn-flower-vector-isolated_53876-8778.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid"
+            bgContainerE1.style.backgroundImage = "url('https://img.freepik.com/free-photo/hibiscus-flower-neutral-background-concept-art-deco-style-postcard-design_166373-6820.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid')"
+        }
+        function lotus(){
+            headE1.textContent = "Lotus"
+            rbE1.style.backgroundColor = "grey"
+            hbE1.style.backgroundColor = "grey"
+            jbE1.style.backgroundColor = "grey"
+            lbE1.style.backgroundColor = "green"
+            rbE1.style.color = "white"
+            lbE1.style.color = "white"
+            hbE1.style.color = "white"
+            jbE1.style.color = "white"
+            paraE1.textContent = "The lotus flower is a symbol of purity, beauty, and spiritual awakening, revered in many cultures around the world. Emerging from murky waters, the lotus blooms in stunning colors, including pink, white, and blue, representing resilience and the ability to rise above challenges."
+            picE1.src = "https://img.freepik.com/free-photo/closeup-shot-lotus-flower_181624-31124.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid"
+            bgContainerE1.style.backgroundImage = "url('https://img.freepik.com/premium-photo/purple-background-with-lotus-flower-it_1264014-66383.jpg?ga=GA1.1.1112420391.1730116229&semt=ais_hybrid')"
+        }
+
+    </script>
+
+
+</body>
+
+</html>
